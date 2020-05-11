@@ -11,7 +11,7 @@ See this guide for installing openvino.
 https://docs.openvinotoolkit.org/latest/_docs_install_guides_installing_openvino_windows.html(It is for windows 10 for other operating systems also you will find the guide in the left side of this page)
 
 Step 1:
-Unzip the project file
+Clone this repository
 
 Step 2
 To initialize the openVINO environment type this commands in your terminal(This is the default path if you download in openvino for windows 10)
@@ -34,21 +34,32 @@ To run the application, open a terminal and go to the project directory:
 
 Run the main.py file using this command:(to run it in cpu)
 
+```
 python main.py -f <Path of xml file of face detection model> \
 -fl <Path of xml file of facial landmarks detection model> \
 -hp <Path of xml file of head pose estimation model> \
 -g <Path of xml file of gaze estimation model> \
 -i <Path of input video file or enter cam for taking input video from webcam> 
+```
 
-)
-if you have gpu available, you can leverage it using "-d" argument in command.To run in GPU:
-
+- If you want to run app on GPU:-
+```
 python main.py -f <Path of xml file of face detection model> \
 -fl <Path of xml file of facial landmarks detection model> \
 -hp <Path of xml file of head pose estimation model> \
 -g <Path of xml file of gaze estimation model> \
 -i <Path of input video file or enter cam for taking input video from webcam> 
 -d GPU
+```
+- If you want to run app on FPGA:-
+```
+python main.py -f <Path of xml file of face detection model> \
+-fl <Path of xml file of facial landmarks detection model> \
+-hp <Path of xml file of head pose estimation model> \
+-g <Path of xml file of gaze estimation model> \
+-i <Path of input video file or enter cam for taking input video from webcam> 
+-d HETERO:FPGA,CPU
+```
 
 
 Similarly if you have FPGA then use:
