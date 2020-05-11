@@ -1,7 +1,7 @@
 # Computer Pointer Controller
 
 In this project, I have used a gaze detection model to control the mouse pointer of your computer. I have used the Gaze Estimation model to estimate the gaze of the user's eyes and change the mouse pointer position accordingly. This app takes video as input and then app estimates eye-direction and head-pose and based on that estimation it move the mouse pointers.I have used openvino_2020.2.117 installed on windows 10.
-I have used my knowledge of how to optimize my model and application code to reduce inference time when running the model at the edge. Using different software optimization techniques to improve the inference time of your model. Calculate how computationally expensive your model is. Use the DL Workbench to optimized my model and benchmarked the performance of my model. Using a VTune amplifier to I am able to find and fix hotspots in your application code. 
+I have used my knowledge of how to optimize my model and application code to reduce inference time when running the model at the edge. Using different software optimization techniques to improve the inference time of your model. Calculated how computationally expensive my model is. Used the DL Workbench to optimized my model and benchmarked the performance of my model. Using a VTune amplifier to I am able to find and fix hotspots in your application code. 
 
 ## Project Set Up and Installation
 Prerequisites:
