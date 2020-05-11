@@ -62,14 +62,7 @@ python main.py -f <Path of xml file of face detection model> \
 ```
 
 
-Similarly if you have FPGA then use:
 
-python main.py -f <Path of xml file of face detection model> \
--fl <Path of xml file of facial landmarks detection model> \
--hp <Path of xml file of head pose estimation model> \
--g <Path of xml file of gaze estimation model> \
--i <Path of input video file or enter cam for taking input video from webcam> 
--d HETERO:FPGA,CPU
 
 If you get Unsupported media format error, then it means that C:\Program Files (x86)\IntelSWTools\openvino_2020.2.117\opencv\bin does not contain opencv_videoio_ffmpeg430_64.dll and some other dll file that we need to run inference on the demo video. Then you will find ffmpeg-download  file(C:\Program Files (x86)\IntelSWTools\openvino_2020.2.117\opencv) in this path. Run this file with powershell and you issue will be resolved
 
@@ -158,11 +151,11 @@ I have added the snapshots of the benchmarking of running this application in di
 ## Results
 I have run the model in 5 diffrent hardware using IntelDevCloud
 
-1.Intel Core i5-6500TE CPU
-2.Intel Core i5-6500TE GPU
-3.IEI Mustang F100-A10 FPGA
-4.Intel Xeon E3-1268L v5 CPU
-5.Intel Atom x7-E3950 UP2 GPU
+    1.Intel Core i5-6500TE CPU
+    2.Intel Core i5-6500TE GPU
+    3.IEI Mustang F100-A10 FPGA
+    4.Intel Xeon E3-1268L v5 CPU
+    5.Intel Atom x7-E3950 UP2 GPU
 
 Also benchmarked their  inference time, frame per second and model loading time.
 
